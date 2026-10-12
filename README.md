@@ -38,8 +38,8 @@ The JavaScript updates launch status, FAQ delivery text and checkout copy when a
 
 ## Deployment
 
-The included GitHub Actions workflow validates the site and publishes `dist/` to GitHub Pages on pushes to `main`. In repository Settings → Pages, select GitHub Actions as the source. The expected project URL is:
+The GitHub Actions workflow validates the site on pushes to `main`. GitHub stores the source; Sites hosts the public storefront. GitHub Pages is not used for this commercial site. The public URL is:
 
-https://doductoanftu2-dotcom.github.io/frame-notes-store/
+https://frame-notes-editor-studies.purplemouse4.chatgpt.site/
 
-No secrets are required. Publishing only exposes the marketing pages and free examples, not the complete research library.
+The Sites project ID and `dist/` deployment configuration are tracked in `.openai/hosting.json`. The source is synchronized and packaged with the Sites workflow helper, then the saved version is deployed through Sites. Source-write credentials are short-lived and must never be committed. Publishing only exposes the marketing pages and free examples, not the complete research library.
